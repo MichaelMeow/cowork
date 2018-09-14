@@ -63,9 +63,9 @@ Catch Phrase:
 
 ## Screenshots
 
-![Mobile](screenshots/Screen Shot 2018-09-14 at 2-32-18 PM.png)
-![Tablet](screenshots/Screen Shot 2018-09-14 at 2-44-18 PM.png)
-![Desktop](screenshots/Screen Shot 2018-09-14 at 2-32-29 PM.png)
+![Mobile](screenshots/233pm.png)
+![Tablet](screenshots/244pm.png)
+![Desktop](screenshots/232pm.png)
 
 ## Setup/Installation Requirements
 
