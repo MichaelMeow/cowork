@@ -46,9 +46,26 @@ WeWork.com is ideal.  Quick price grabber.  Big pictures.  Big map.  Nice transi
 
 Techspace.com feels lame, cold.  Wework situates itself in the right city for you right away, when in tech space and the location is anywhere, it feels like you’re in an airport or something, it’s alienating.  The location should be a big part of our story and the feel of our site.  Use images with people in them so you can say, those are my people.
 
-## Specs
+Name brainstorm:
+WorkHearth
+WorkLovely
 
 
+Catch Phrase:
+“Love where you work.”
+“I work in Portland and I love it.”
+
+## Sketches
+
+![](hand_sketches/mobilesketch.png)
+![](hand_sketches/indexsketch.png)
+![](hand_sketches/pages.png)
+
+## Screenshots
+
+![Mobile](screenshots/Screen Shot 2018-09-14 at 2.32.18 PM.png)
+![Tablet](screenshots/Screen Shot 2018-09-14 at 2.44.18 PM.png)
+![Desktop](screenshots/Screen Shot 2018-09-14 at 2.32.29 PM.png)
 
 ## Setup/Installation Requirements
 
@@ -62,6 +79,7 @@ Techspace.com feels lame, cold.  Wework situates itself in the right city for yo
 * Use a browser to open index.html.
 
 Or, simply click the link at the top of the README to be redirected to the site on gh-pages.
+
 ## Known Bugs
 
 There are no known bugs.
