@@ -10,12 +10,25 @@ body {
   margin-bottom: 150px;
 }
 
-.grid-container {
+a {
+  color: $grey;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+}
+}
+
+.grid-container-home {
   display: grid;
   grid-template-rows: 42px 272px auto 248px 325px 122px 380px 407px 210px 200px 200px 200px;
   @include mediaQuery(900px){
     grid-template-rows: 42px 272px auto 248px 650px 122px 800px 800px 210px;
   };
+}
+.grid-container-plans, .grid-container-amenities, .grid-container-contact {
+  display: grid;
+  grid-template-rows: 42px 272px auto
+
 }
 
 .nav-bar {
@@ -35,6 +48,12 @@ body {
     @include flex-row;
     min-width: 350px;
     font-weight: lighter;
+    @include mediaQuery(900px){
+      min-width: 250px;
+    }
+    @include mediaQuery(600px){
+      display:none;
+    }
   }
 }
 
@@ -236,4 +255,29 @@ body {
       font-weight: bold;
     }
   }
+}
+
+.email-text {
+  @include cursive-title;
+  margin: 25px;
+}
+.message-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+font-size: 1em;
+div {
+  margin: 10px;
+}
+input {
+  width: 300px;
+  height: 40px;
+}
+button {
+  width: 132px;
+  height: 50px;
+  border-radius: 10%;
+  border: none;
+  background-color: $yellow;
+}
 }
