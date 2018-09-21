@@ -1,0 +1,239 @@
+@import "mixins";
+@import "variables";
+
+body {
+  font-family: helvetica;
+  font-size: 14px;
+  margin: 0px;
+  background-color: $lightyellow;
+  color: $black;
+  margin-bottom: 150px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 42px 272px auto 248px 325px 122px 380px 407px 210px 200px 200px 200px;
+  @include mediaQuery(900px){
+    grid-template-rows: 42px 272px auto 248px 650px 122px 800px 800px 210px;
+  };
+}
+
+.nav-bar {
+  grid-row: span 1;
+  @include flex-row;
+  padding: 12px;
+  background-color: $black;
+  color: $grey;
+  .burger{
+    svg{
+      fill: $grey;
+      height: 16px;
+      width: 16px;
+    }
+  }
+  .nav-items{
+    @include flex-row;
+    min-width: 350px;
+    font-weight: lighter;
+  }
+}
+
+.main-title {
+  grid-row: span 1;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  font-size: 2.5rem;
+  span:nth-child(1) {
+    color: $teal;
+  }
+  span:nth-child(2) {
+    color: $pink;
+  }
+  span:nth-child(5) {
+
+    font-family: 'Pacifico', cursive;
+    color: $maroon;
+  }
+}
+
+.title-image {
+  padding: 0px;
+  grid-row: span 1;
+  img {
+    width: 100%;
+  }
+}
+
+.main-logo {
+  @include flex-column;
+
+  .heart {
+    width: 99px;
+  }
+  div:nth-child(2){
+    font-size: 2.5rem;
+    span {
+      font-family: 'Pacifico', cursive;
+    }
+  }
+}
+
+.why-work-lovely {
+
+  @include flex-row;
+  justify-content: space-around;
+  @include mediaQuery(900px){
+    @include flex-column;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+
+  };
+  & > div:nth-child(1){
+    width: 325px;
+    @include flex-column;
+    align-items: flex-start;
+    div:nth-child(1) {
+      font-size: 1.5rem;
+    }
+  }
+  & > div:nth-child(2){
+    width: 325px;
+    height: 325px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 105%;
+    }
+  }
+}
+
+.plans-text {
+    grid-row: span 1;
+@include cursive-title;
+}
+
+.plan-layout {
+  grid-row: span 1;
+  @include flex-row;
+  justify-content: space-around;
+  @include mediaQuery(900px){
+    @include flex-column;
+    .plan-box{
+      margin-bottom: 20px;
+    }
+  };
+  .plan-box {
+    border: 2px solid $yellow;
+    height: 380px;
+    width: 288px;
+    @include flex-column;
+    justify-content: flex-start;
+    & > div:nth-child(1) {
+      height: 72px;
+      width: 72px;
+      margin-top: 53px;
+      margin-bottom: 14px;
+      svg{
+        fill: $pink;
+        height: 100%
+      }
+    }
+    & > div:nth-child(2) {
+      font-size: 1.5rem;
+      margin-bottom: 14px;
+    }
+    & > div:nth-child(3) {
+      @include flex-column;
+      & > div {
+        @include flex-row;
+        width: 235px;
+        margin-top: 20px;
+        color: $teal;
+        font-size: 18px;
+        & > div:nth-child(1){
+          font-weight: bold;
+        }
+        & > div:nth-child(2){
+          font-weight: lighter;
+          font-style: oblique;
+        }
+
+      }
+      font-size: 1rem;
+    }
+  }
+}
+
+.lovely-story {
+  @include mediaQuery(900px){
+    @include flex-column;
+    }
+  overflow: hidden;
+  @include flex-row;
+  justify-content: center;
+  align-items: center;
+  & > div:nth-child(1) {
+    width: 400px;
+    img{
+      width: 100%;
+    }
+  }
+  & > div:nth-child(2) {
+    box-sizing: border-box;
+    width: 400px;
+    height: 300px;
+    background-color: $lightpink;
+    padding: 25px;
+    & > div:nth-child(1) {
+      font-size: 1.5rem;
+      color: $maroon;
+    }
+    & > div:nth-child(2) {
+      font-size: 12px;
+    }
+  }
+}
+
+.amenities-text {
+    grid-row: span 1;
+  @include cursive-title;
+}
+.amenity-collection{
+  @include flex-row;
+  justify-content: center;
+  @include mediaQuery(900px){
+    flex-wrap:wrap;
+    }
+  .amenity-cell {
+    @include flex-column;
+    padding-right: 30px;
+    padding-top:20px;
+    & > div:nth-child(1) {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        height: 100%;
+      }
+      svg {
+        width: 60%;
+        fill: $pink
+      }
+      background-color: $lightpink;
+    }
+    & > div:nth-child(2) {
+      padding-top: 10px;
+      font-size: 12px;
+      color: $maroon;
+      font-weight: bold;
+    }
+  }
+}
